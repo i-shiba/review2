@@ -1,0 +1,18 @@
+packege jp.co.dhw.review2;
+
+public class Teacher extends User{
+	public String subject = null;
+	public void Teacher(Integer id, String firstname, String lastName, String subject){
+		this.id        = id;
+		this.firstName = firstName;
+		this.lastName  = lastName;
+		this.subject   = subject;
+	}
+	public String getSubject(){
+		return this.subject;
+	}
+	public void showSubject(){
+		System.out.println("教科" + this.subject);
+	}
+
+}
